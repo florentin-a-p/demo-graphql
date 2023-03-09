@@ -1,0 +1,15 @@
+schema{
+    query: Query
+}
+
+type Query{
+    getCountries : [Country]
+    getCountriesWithId(id: Int) : Country
+    getCountriesWithName(name: String) : Country
+}
+
+type Country {
+    id: Int
+    name: String
+    capital: String
+}
